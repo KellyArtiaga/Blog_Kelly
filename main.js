@@ -112,7 +112,7 @@ function deleteIssue(id) {
     fetchPosts();
 }
 
-// Date
+/* // Date
 function date() {
     var data = new Date();
 
@@ -131,4 +131,4 @@ function date() {
     document.getElementById('dateTxt').innerHTML = 'Hoje é ' + str_data;
     document.getElementById('timeTxt').innerHTML = ' às ' + str_hora;
     setTimeout('date()', 500);
-}
+} */
