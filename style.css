@@ -28,6 +28,10 @@ a.btn-link:hover,a.btn-link:focus, button.btn-link:hover,button.btn-link:focus {
     text-decoration: none;
 }
 
+a.navbar-brand{
+    color: #626868;
+}
+
 .underline{
     content:'';
     border-top:2px solid purple !important;
@@ -62,6 +66,18 @@ head, .bg-header{
 
 .bg-header div.icon{
     padding:10px
+}
+
+.bg-footer{
+    height: 30px;
+    background: lightgray;
+    color: #626868;
+}
+
+.bg-footer a{
+    margin-top: 10px;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 div.icon a{
@@ -132,9 +148,7 @@ a.btn-link:hover,a.btn-link:focus {
 
 /* Responsive */
 @media screen and (max-width: 992px) {
-/*     #filter{
-        position: fixed;
-        top:5%;
-        right: 0;
-    } */
+    #issuesList{
+        margin-top: 15px;
+    }
 }
