@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Blog Kelly</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- My style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="fetchPosts()">
+    <header>
+        <div class="container-fluid bg-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="#" class="navbar-brand">
+                        Blog Kelly
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid bg-general-header mt-3">
+        <div class="container py-4">
+            <header class="col-md-12">
+                <h1 class="text-center text-light">
+                    Blog posts
+                    <span class="underline"></span>
+                </h1>
+                <p class="text-center text-light">
+                    Follow everything that happens on our blog regarding the world and technology.
+                </p>
+            </header>
+        </div>
+    </div>
+    <br>
+
+    <div class="container mt-2">
+        <p class="row">
+            <a class="btn btn-link text-right" data-toggle="collapse" href="#collapseNew" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                New Post
+            </a>
+        </p>
+        <div class="row">
+            <div class="collapse" id="collapseNew">
+                <div class="card card-body col-md-12">
+                    <form id="issueInputForm">
+                        <div class="form-group col-md-3">
+                            <label for="issueTitleInput">Title</label>
+                            <input type="text" class="form-control" id="issueTitleInput" placeholder="Title">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="issueAssignedToInput">Assigned To</label>
+                            <input type="text" class="form-control" id="issueAssignedToInput"
+                                placeholder="Enter responsible ...">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="issueDateInput">Date</label>
+                            <input type="date" class="form-control" id="issueDateInput" placeholder="Date">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="issueDescInput">Description</label>
+                            <textarea type="text" class="form-control" id="issueDescInput"
+                                placeholder="Describe the issue ..."></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-link">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><br>
+        <!-- BLOG CARDS -->
+        <div class="row p-0 m-0">
+            <!-- FILTER -->
+            <div class="col-md-4 text-right mb-2" id="filter">
+                <section class="card my-3">
+                    <div class="card-header col-md-12">
+                        <h4 class="text-center">
+                            Filter
+                            <span class="underline"></span>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="searchInputForm">
+                            <div class='form-group ' id='datetimepicker3'>
+                                <input placeholder="dd/mm/yyyy" class="form-control" type="date" id="searchDateInput"
+                                    value="searchDateInput">
+                            </div>
+                            <div class="form-group ">
+                                <a type="button" class="btn btn-link" onclick="filterIssue()">Search</a>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Posts -->
+            <div class="col-md-8" id="issuesList">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/*
+General
+*/
+
+.bg-general-header{
+    background: #626868;
+}
+
+.text-light{
+    color: whitesmoke;
+}
+
+.card{
+    z-index: 1000!important;
+    transition: 0.3s;
+}
+
+.btn{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+a.btn-link, button.btn-link{
+    background:purple ;
+    color:whitesmoke;
+    text-decoration: none;
+    border-radius:6px ;
+}
+
+a.btn-link:hover,a.btn-link:focus, button.btn-link:hover,button.btn-link:focus {
+    background:rgb(160, 92, 160);
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.underline{
+    content:'';
+    border-top:2px solid purple !important;
+    width:120px;
+    display:block;
+    margin-bottom:8px;
+    margin:0 auto
+}
+
+.well{
+    display: flow-root;
+}
+
+/*
+Topo
+*/
+
+head, .bg-header{
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+.bg-header{
+    height: 50px;
+    background-color: #f1f2f2;
+}
+
+.bg-header div.icon{
+    padding:10px
+}
+
+div.icon a{
+    color:#616161
+}
+
+/*
+Rodapé
+*/
+
+.bg-footer{
+    background-color: #626868;
+}
+
+.bg-footer ul li{
+    list-style: none;
+}
+
+.card{
+    background: white;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid lightgray
+}
+
+.card.purple-card{
+    padding: 10px;
+    background-color: purple;
+    color: white;
+}
+
+/*
+General Template
+*/
+
+.bg-general-header{
+    background: #626868;
+}
+
+.card{
+    transition: 0.3s;
+}
+
+a.btn-link{
+    background:purple ;
+    color:white;
+    text-decoration: none;
+}
+
+a.btn-link:hover,a.btn-link:focus {
+    background:rgb(160, 92, 160);
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.underline{
+    content:'';
+    border-top:2px solid purple;
+    width:120px;
+    display:block;
+    margin-bottom:8px;
+    margin:0 auto
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+/*     #filter{
+        position: fixed;
+        top:5%;
+        right: 0;
+    } */
+}
