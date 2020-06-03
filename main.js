@@ -18,8 +18,8 @@ function fetchPosts(filter) {
                     '<h6>' + desc + '</h6>' +
                     '<p><span class="glyphicon glyphicon-time"></span> ' + date + ' ' +
                     '<span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>' +
-                    '<div class="col-md-12 text-right"><a href="#" class="btn btn-link" onclick="seeMoreIssue(\'' + id + '\')">Know More...</a>' +
-                    '<a href="#" class="btn btn-danger text-right mr-2" onclick="deleteIssue(\'' + id + '\')"><span class="glyphicon glyphicon-trash"></span></a>' +
+                    '<div class="col-md-12 text-right"><div class="btn-group"><a href="#" class="btn btn-link" onclick="seeMoreIssue(\'' + id + '\')">Know More...</a>' +
+                    '<a href="#" class="btn btn-danger text-right mr-2" onclick="deleteIssue(\'' + id + '\')"><span class="glyphicon glyphicon-trash"></span></a></div>' +
                     '</div>';
             }
         }
@@ -37,8 +37,8 @@ function fetchPosts(filter) {
                 '<h6>' + desc + '</h6>' +
                 '<p><span class="glyphicon glyphicon-time"></span> ' + date + ' ' +
                 '<span class="glyphicon glyphicon-user"></span> ' + assignedTo + '</p>' +
-                '<div class="col-md-12 text-right"><a href="#" class="btn btn-link" onclick="seeMoreIssue(\'' + id + '\')">Know More...</a>' +
-                '<a href="#" class="btn btn-danger text-right mr-2" onclick="deleteIssue(\'' + id + '\')"><span class="glyphicon glyphicon-trash"></span></a>' +
+                '<div class="col-md-12 text-right"><div class="btn-group"><a href="#" class="btn btn-link" onclick="seeMoreIssue(\'' + id + '\')">Know More...</a>' +
+                '<a href="#" class="btn btn-danger text-right mr-2" onclick="deleteIssue(\'' + id + '\')"><span class="glyphicon glyphicon-trash"></span></a></div>' +
                 '</div>';
         }
     }

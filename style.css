@@ -15,11 +15,6 @@ General
     transition: 0.3s;
 }
 
-.btn{
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 a.btn-link, button.btn-link{
     background:purple ;
     color:whitesmoke;
@@ -44,6 +39,10 @@ a.btn-link:hover,a.btn-link:focus, button.btn-link:hover,button.btn-link:focus {
 
 .well{
     display: flow-root;
+}
+
+.float-right{
+    float: right;
 }
 
 /*
@@ -97,7 +96,11 @@ Rodapé
 /*
 General Template
 */
-
+.btn {
+    margin-right:0;
+    margin-left:0;
+}
+ 
 .bg-general-header{
     background: #626868;
 }

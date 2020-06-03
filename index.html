@@ -45,43 +45,48 @@
     </div>
     <br>
 
-    <div class="container mt-2">
-        <p class="row">
-            <a class="btn btn-link text-right" data-toggle="collapse" href="#collapseNew" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                New Post
-            </a>
-        </p>
+    <!-- Add New Post -->
+    <div class="container">
         <div class="row">
-            <div class="collapse" id="collapseNew">
-                <div class="card card-body col-md-12">
-                    <form id="issueInputForm">
-                        <div class="form-group col-md-3">
-                            <label for="issueTitleInput">Title</label>
-                            <input type="text" class="form-control" id="issueTitleInput" placeholder="Title">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="issueAssignedToInput">Assigned To</label>
-                            <input type="text" class="form-control" id="issueAssignedToInput"
-                                placeholder="Enter responsible ...">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="issueDateInput">Date</label>
-                            <input type="date" class="form-control" id="issueDateInput" placeholder="Date">
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label for="issueDescInput">Description</label>
-                            <textarea type="text" class="form-control" id="issueDescInput"
-                                placeholder="Describe the issue ..."></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <button type="submit" class="btn btn-link">Add</button>
-                        </div>
-                    </form>
+            <div class="col-md-12 float-right">
+                <a class="btn btn-link btn-new-post" data-toggle="collapse" href="#collapseNew" role="button"
+                    aria-expanded="false" aria-controls="collapseNew">
+                    New Post
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="collapse" id="collapseNew">
+                    <div class="card card-body col-md-12">
+                        <form id="issueInputForm">
+                            <div class="form-group col-md-3">
+                                <label for="issueTitleInput">Title</label>
+                                <input type="text" class="form-control" id="issueTitleInput" placeholder="Title">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="issueAssignedToInput">Assigned To</label>
+                                <input type="text" class="form-control" id="issueAssignedToInput"
+                                    placeholder="Enter responsible ...">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="issueDateInput">Date</label>
+                                <input type="date" class="form-control" id="issueDateInput" placeholder="Date">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="issueDescInput">Description</label>
+                                <textarea type="text" class="form-control" id="issueDescInput"
+                                    placeholder="Describe the issue ..."></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-link">Add</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div><br>
-        <!-- BLOG CARDS -->
+
         <div class="row p-0 m-0">
             <!-- FILTER -->
             <div class="col-md-4 text-right mb-2" id="filter">
